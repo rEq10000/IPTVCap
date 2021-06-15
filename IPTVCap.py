@@ -13,5 +13,5 @@ while True:
 
 	os.system('ffmpeg -i "' + iptvlink + '" -vf fps=1/1 -frames:v 1 "' + channel + day + '.jpg' + '"')
 	curvalue = 1 + curvalue
-	os.system("title IPTVCap - Images Downloaded: " + curvalue)
+	os.system("title IPTVCap - Images Downloaded: " + str(curvalue))
 	time.sleep(60)
