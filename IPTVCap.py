@@ -11,6 +11,6 @@ while True:
 
 	channel = "channelnamehere"
 
-	os.system('ffmpeg -i "' + iptvlink + '" -vf fps=1/1 -frames:v 1"' + channel + day + '.jpg' + '"')
+	os.system('ffmpeg -i "' + iptvlink + '" -vf fps=1/1 -frames:v 1 "' + channel + day + '.jpg' + '"')
 
 	time.sleep(60)
